@@ -59,3 +59,22 @@ Esta función crea un lector para descomprimir el cuerpo de una respuesta HTTP s
 func UngzipReader(resp *http.Response) (io.ReadCloser, error)
 
 ```
+
+# Ejemplo
+
+```go
+package main
+
+import (
+	"github.com/sebarray/ClientGpt/service"
+)
+
+func main() {
+	var client service.ChatCompletionRequest
+	respose, err := client.ReqChatGpt("Hello, how are you?", "apikey")
+	if err != nil {
+		panic(err)
+	}
+	println(respose)
+}
+```
