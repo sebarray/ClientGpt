@@ -8,6 +8,7 @@ Este paquete proporciona estructuras y funciones para interactuar con la API de 
 
 ## Estructuras
 
+
 ### ChatCompletionRequest
 
 Esta estructura representa una solicitud de chat para la API de OpenAI GPT-3.
